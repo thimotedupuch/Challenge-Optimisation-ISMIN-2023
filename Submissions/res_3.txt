@@ -1,0 +1,12 @@
+EQUIPE theo_thimote.jpeg
+INSTANCE 3
+0 2
+0 18
+1 7
+2 9
+4 13
+5 0
+6 10
+7 11
+9 6
+9 17
