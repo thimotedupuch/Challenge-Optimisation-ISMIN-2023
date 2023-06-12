@@ -1,5 +1,4 @@
 using JuMP
-
 using HiGHS
 
 
@@ -66,7 +65,7 @@ assign("CIBLE")
 assign("OBSTACLE")
 
 
-for i in 4:size(lines)[1] # 56 à changer 
+for i in 4:size(lines)[1] # 1ère, 2ème et 3èeme lignes inutiles
     line = lines[i]
     parts = split(line)
     objet = parts[1] # objet est 
@@ -82,7 +81,7 @@ m = Model(HiGHS.Optimizer)
 # Variables de décision
 @variable(m, surveillant[1:nb_lignes, 1:nb_colonnes], Bin)
 
-# Contrainte 1: Chaque cible doit être surveillée
+# Contrainte 1: Chaque cible doit être surveillée (au moins une fois)
 for i in 1:nb_lignes
     for j in 1:nb_colonnes
         if grille[i, j] == 1 # Si c'est une cible 
@@ -123,7 +122,7 @@ end
 println(resultats_optim)
 
 
-fichier = open("vivejulia/res_16.txt", "w")
+fichier = open("Submissions/res_16.txt", "w")
 write(fichier,"EQUIPE theo_thimote.jpeg")
 write(fichier,"INSTANCE 16")
 for resultat in resultats_optim
