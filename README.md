@@ -3,6 +3,8 @@ Dépot du résultat du Challenge Optimisation 2023 (solution gagnante)
 
 ## Résultats du code : 
 #### (32 secondes de temps de compilation et d'exécution)
+
+```
 Instance gr01.txt :	8   surveillants	OPTIMAL
 Instance gr02.txt :	7   surveillants	OPTIMAL
 Instance gr03.txt :	10  surveillants	OPTIMAL
@@ -19,4 +21,4 @@ Instance gr13.txt :	58  surveillants	OPTIMAL
 Instance gr14.txt :	53  surveillants	OPTIMAL
 Instance gr15.txt :	122 surveillants	OPTIMAL
 Instance gr16.txt :	113 surveillants	OPTIMAL
-
+```
